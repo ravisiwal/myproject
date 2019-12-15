@@ -43,6 +43,12 @@ a = 5
 table = [[a, b, a * b] for b in range(1, 11)]
 print(table)
 
+noprimes = [j for i in range(2, 8) for j in range(i*2, 50, i)]
+primes = [x for x in range(2, 50) if x not in noprimes]
+print(noprimes)
+print(primes)
+
+
 print("\nMultiplication Table")
 for i in table:
     print (i)
