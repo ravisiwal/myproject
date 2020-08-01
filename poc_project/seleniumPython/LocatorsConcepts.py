@@ -12,7 +12,6 @@ print(driver.title)
 firstname =  driver.find_element_by_name('FirstName')
 firstname.send_keys('testtduser')
 
-
 feature_link = driver.find_element(By.LINK_TEXT, "Features")
 feature_link.click()
 driver.implicitly_wait(3)
